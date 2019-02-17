@@ -1,0 +1,12 @@
+<div class="col-md-12">
+  <h1>НОВАЯ ЗАДАЧА</h1>
+<p>
+<%= form_for((Todo.new), html: { id: "form_id" }) do |f| %>
+  <%= f.text_field :text, placeholder: "Название задачи" %>
+</p>
+<p>
+  <%= f.select :project_id, Project::PROJECTID %>
+</p>
+  <h3><%= link_to "ОТМЕНА", id: "cancelform" %> <%= link_to 'OK', "#", :onclick => "$('#form_id').submit()" %></h3>
+<% end %>
+</div>

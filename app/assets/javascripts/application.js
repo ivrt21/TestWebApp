@@ -13,3 +13,13 @@
 //= require rails-ujs
 //= require activestorage
 //= require_tree .
+//= require jquery3
+//= require jquery_ujs
+$(document).ready(function() {
+  $(document).on("click","#addform",function(){
+    $("#renderform").show();
+  });
+  $(document).on("click","#cancelform",function(){
+    $("#renderform").hide();
+  });
+});

@@ -1,0 +1,31 @@
+<h1>Задачи</h1>
+
+<% @projects1.each do |project| %>
+  <h2><%= project.title %></h2>
+  <% @todos1.each do |todo| %>
+    <ul><li><%= todo.text %></ul>
+  <% end %>
+<% end %>
+<% @projects2.each do |project| %>
+  <h2><%= project.title %></h2>
+  <% @todos2.each do |todo| %>
+    <ul><li><%= todo.text %></ul>
+  <% end %>
+<% end %>
+<% @projects3.each do |project| %>
+  <h2><%= project.title %></h2>
+  <% @todos3.each do |todo| %>
+    <ul><li><%= todo.text %></ul>
+  <% end %>
+<% end %>
+<br>
+<div class="container">
+<div style="float:left">
+<h3>Добавить новую задачу</h3>
+</div>
+<br>
+<%= button_tag "+", {id: "addform", class: "btn-primary"} %>
+<br>
+<div id="renderform">
+  <%= render 'form' %>
+</div>

@@ -1,0 +1,27 @@
+projects:
+ - title: 'Семья'
+   todos:
+    - text: 'Купить молоко'
+      iscompleted: false
+    - text: 'Заменить масло в двигателе до 23 апреля'
+      iscompleted: false
+    - text: 'Отправить письмо бабушке'
+      iscompleted: true
+    - text: 'Заплатить за квартиру'
+      iscompleted: false
+    - text: 'Забрать обувь из ремонта'
+      iscompleted: false
+ - title: 'Работа'
+   todos:
+    - text: 'Позвонить заказчику'
+      iscompleted: true
+    - text: 'Отправить документы'
+      iscompleted: true
+    - text: 'Заполнить отчет'
+      iscompleted: false
+ - title: 'Прочее'
+   todos:
+    - text: 'Позвонить другу'
+      iscompleted: false
+    - text: 'Подготовиться к поездке'
+      iscompleted: false
