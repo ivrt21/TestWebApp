@@ -1,5 +1,14 @@
+<div class="container">
+<div style="float:left">
 <h1>Задачи</h1>
-
+</div>
+<br>
+<div style="float:right">
+<%= button_tag "+", {id: "addform", class: "btn-primary" } %>
+</div>
+<br>
+<br>
+<br>
 <% @projects1.each do |project| %>
   <h2><%= project.title %></h2>
   <% @todos1.each do |todo| %>
@@ -18,13 +27,7 @@
     <ul><li><%= todo.text %></ul>
   <% end %>
 <% end %>
-<br>
-<div class="container">
-<div style="float:left">
-<h3>Добавить новую задачу</h3>
-</div>
-<br>
-<%= button_tag "+", {id: "addform", class: "btn-primary"} %>
+
 <br>
 <div id="renderform">
   <%= render 'form' %>
